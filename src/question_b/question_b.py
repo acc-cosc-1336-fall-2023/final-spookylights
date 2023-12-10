@@ -17,7 +17,7 @@ class Stock:
 
 def get_stock_list():
     stock_list = {}
-    in_file = open("src\\question_b\\stocklist.dat", "r")
+    in_file = open("src/question_b/stocklist.dat", "r")
     for line in in_file:
         symbol, company_name = line.split(",")
         stock = Stock(symbol, company_name)
